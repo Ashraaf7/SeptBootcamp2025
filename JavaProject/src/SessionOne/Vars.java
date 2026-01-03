@@ -1,5 +1,7 @@
 package SessionOne;
 
+import SessionTwo.Functions;
+
 public class Vars {
 
     public static void main(String[] args) {
