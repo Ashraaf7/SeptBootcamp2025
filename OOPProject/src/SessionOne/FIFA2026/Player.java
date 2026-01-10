@@ -11,7 +11,7 @@ public class Player {
     public int playerAge;
     public double playerSkills;
     public int playerNumber;
-    public String playerTeam;
+    private String playerTeam;
     public String playerPosition;
     public char favLeg;
 
