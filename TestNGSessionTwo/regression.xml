@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Regression Suite">
+    <test name="Regression Test On Edge">
+        <parameter name="browser" value="edge"></parameter>
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="Annotations"/>
+            <class name="Assertions"/>
+            <class name="Dependency"/>
+            <class name="Priority"/>
+            <class name="RealAnnontations"/>
+        </classes>
+    </test>
+</suite>
