@@ -16,7 +16,7 @@ public class RealAnnontations {
 
     WebDriver driver;
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void setup() {
         // Code to set up WebDriver before each test method
          driver = new EdgeDriver();
@@ -24,7 +24,7 @@ public class RealAnnontations {
         driver.get("https://the-internet.herokuapp.com/dynamic_loading/1");
     }
 
-    @Test
+    @Test(groups = "regression")
     public void explicitWaitExample() {
         // Code for explicit wait example
 
@@ -52,7 +52,7 @@ public class RealAnnontations {
 
         System.out.println("text:" + text);
     }
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void tearDown() {
         // Code to clean up after each test method
             driver.quit();

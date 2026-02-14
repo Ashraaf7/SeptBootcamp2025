@@ -32,7 +32,7 @@ import org.testng.annotations.*;
             System.out.println("Test Case 2 executed");
         }
 
-        @Test
+        @Test(groups = "regression")
         public void testCase3() {
             System.out.println("Test Case 3 executed");
         }
