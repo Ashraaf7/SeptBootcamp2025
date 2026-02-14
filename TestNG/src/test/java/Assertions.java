@@ -46,6 +46,7 @@ public class Assertions {
         waitForElementBeClickable(By.id("login2")).click();
         waitForElementBeVisible(By.id("loginusername")).sendKeys("test740740");
         waitForElementBeVisible(By.id("loginpassword")).sendKeys("ashraf123");
+        //wait for otp field to be visible
         waitForElementBeClickable(By.cssSelector("[onclick=\"logIn()\"]")).click();
         String actualText = waitForElementBeVisible(By.id("nameofuser")).getText(); //selenium
         SoftAssert softAssert = new SoftAssert();
